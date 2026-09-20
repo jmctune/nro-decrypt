@@ -11,7 +11,7 @@ Decrypts a GRF for NightmareRO.
 - Open `nrodecrypt-gui.exe`
 - Click "Browse" or drag the GRF into the window
 - Click "Decrypt"
-- A file named "<file>_decrypted.grf" is created relative to the GRF you selected
+- A file named `<file>_decrypted.grf` is created relative to the GRF you selected
 
 ## cli Usage
 
