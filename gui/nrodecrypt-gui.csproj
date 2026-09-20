@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>nrodecrypt-gui</AssemblyName>
+    <RootNamespace>NroDecrypt.Gui</RootNamespace>
+    <StartupObject>NroDecrypt.Gui.Startup</StartupObject>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>false</SelfContained>
+  </PropertyGroup>
+
+  <!-- the GUI reuses the console tool's engine as-is; only Program.Run is called -->
+  <ItemGroup>
+    <Compile Include="..\cli\Program.cs" Link="Program.cs" />
+    <Compile Include="..\cli\Grf.cs" Link="Grf.cs" />
+    <Compile Include="..\cli\Key.cs" Link="Key.cs" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>
